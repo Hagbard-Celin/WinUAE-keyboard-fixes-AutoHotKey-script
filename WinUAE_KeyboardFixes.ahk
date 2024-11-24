@@ -1,4 +1,5 @@
 ﻿#Requires AutoHotkey v2.0
+A_MenuMaskKey := "vk00sc000"
 ; #NoTrayIcon ; Un-comment to disable the tray-icon and thus also the ability to quit the script. 
 
 ; This remaps qualifier keys to disable windows overriding certain hotkeys.
@@ -12,6 +13,8 @@ LControl & RAlt::F21 ; This is AltGr.
 RWin::F22
 AppsKey::F23
 RShift::F24
+
+A_MenuMaskKey := "vkFF"
 
 ; This makes Windows use the same hotkeys for Cut/Copy/Paste as the emulated Amiga
 ; in addition to the Windows standard Cut/Copy/Paste hotkeys.
