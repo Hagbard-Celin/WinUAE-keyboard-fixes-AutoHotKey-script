@@ -3,14 +3,20 @@
 Would you like to use Alt+Tab to cycle trough Workbench windows? Or are you fed up of pasting the wrong text, because you accidentally pressed Win+c when you tried to copy from a Windows program?
 Then this is the script for you.
 
-The first thin it does is to remap Shift, Win, Alt and Compose key on Windows side like this:
-Left Shift becomes F18.
-Left Windows key becomes F19.
-Left Alt becomes F20.
-Right Alt become F21.
-Right Windows key becomes F22.
-Compose* key becomes F23.
-Right Shift becomes F24.
+There is one catch:
+Even after commit 5aa1bcf, the remapped keys occasionally gets stuck and needs to be pressed a second time to get released.
+This is a reoccurring issue with AutoHotkey, and one of the solutions presented in various posts on the AHK-Forum might fix it.
+I've not had time/motivation to test them all as this is just a minor annoyance in my use case.
+Should you find a working fix, feel free to let me know.
+
+The first thing it does is to remap Shift, Win, Alt and Compose key on Windows side like this:
+- Left Shift becomes F18.
+- Left Windows key becomes F19.
+- Left Alt becomes F20.
+- Right Alt become F21.
+- Right Windows key becomes F22.
+- Compose* key becomes F23.
+- Right Shift becomes F24.
 This disables all the Windows hotkey combinations that is usually hijacked by Windows. As Alt+Tab and Ctrl+Shift+Escape. 
 This is done only when the mouse-pointer is inside the border of a active WinUAE window.
 
